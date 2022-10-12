@@ -1,0 +1,33 @@
+.checkbox-wrapper{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 14px;
+    gap: 12px;
+    width: inherit;
+    position: relative;
+}
+svg{
+    width: 24px;
+    height: 24px;
+}
+
+input[type='checkbox']{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 24px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 24px;
+}
+input[type='checkbox']:disabled {
+    filter: grayscale(80%);
+}
+input[type='checkbox']:focus,input[type='checkbox']:hover {
+    cursor: pointer;
+}
+span{
+    margin: 0;
+    padding: 0;
+}
